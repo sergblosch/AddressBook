@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.javabegin.javafx.controllers.EditController">
+   <left>
+      <VBox prefHeight="140.0" prefWidth="84.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label ellipsisString="" prefHeight="25.0" text="%lbl.name">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label ellipsisString="" prefHeight="25.0" text="%lbl.address">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label ellipsisString="" prefHeight="25.0" text="%lbl.phone">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="fieldName" prefHeight="25.0" promptText="%comment.typeName">
+               <VBox.margin>
+                  <Insets bottom="5.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="fieldAddress" prefHeight="25.0" promptText="%comment.typeAddress">
+               <VBox.margin>
+                  <Insets bottom="5.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="fieldPhone" prefHeight="25.0" promptText="%comment.typePhone">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="40.0" prefWidth="471.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSave" ellipsisString="" layoutX="359.0" mnemonicParsing="false" onAction="#saveNote" onKeyPressed="#pressSave" prefHeight="25.0" prefWidth="85.0" text="%btn.save" AnchorPane.rightAnchor="110.0" />
+            <Button fx:id="btnCancel" cancelButton="true" ellipsisString="" layoutX="415.0" mnemonicParsing="false" onAction="#closeWindow" onKeyPressed="#pressCancel" prefHeight="25.0" prefWidth="85.0" text="%btn.cancel" AnchorPane.rightAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
