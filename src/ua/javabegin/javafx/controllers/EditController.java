@@ -37,7 +37,7 @@ public class EditController {
     private Parent fxmlEdit;
     private Window windowOwner;
     private static final String FXML_EDIT = "../fxml/edit.fxml";
-    private boolean saveClicked = false;// для определения нажатой кнопки
+    private boolean saveClicked = false; //для определения нажатой кнопки
 
 
     public void showDialog(Window window, Parent fxmlEdit, FXMLLoader fxmlLoader){
@@ -145,38 +145,40 @@ public class EditController {
         });
     }
 
-    //    public void saveNote() {
-//        String name = getFieldName().getText();
-//        String address = getFieldAddress().getText();
-//        String phone = getFieldPhone().getText();
-//        Person per = new Person(name, address, phone);
-//        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//        alert.setTitle("Warning");
-//        if (!(person == null)) {
-//            updatePerson(name, address, phone);
-//        } else if (!name.equals("")) {
-//            boolean found = false;
-//            for (Person p : dbAddressBook.searchAll()) {
-//                if ((p.getName().toLowerCase().equals(name.toLowerCase()) && p.getAddress().toLowerCase().equals(address.toLowerCase()) && phone.isEmpty()) ||
-//                        (p.getName().toLowerCase().equals(name.toLowerCase()) && p.getPhone().toLowerCase().equals(phone.toLowerCase()) && address.isEmpty()) ||
-//                        (p.getName().toLowerCase().equals(name.toLowerCase()) && phone.isEmpty() && address.isEmpty()) ||
-//                        p.equals(per)){
-//                    found = true;
-//                    break;
-//                }
-//            }
-//            if (!found) {
-//                //dbAddressBook.addNote(per);
-//                saveClicked = true;
-//                this.person = per;
-//                closeWindow();
-//            } else {
-//                alert.setHeaderText("Such person '" + per.getName() + "' is already present in the address book");
-//                alert.showAndWait();
-//            }
-//        } else if (name.equals("")){
-//            alert.setHeaderText("Please type a name");
-//            alert.showAndWait();
-//        }
-//    }
+    /*
+    public void saveNote() {
+        String name = getFieldName().getText();
+        String address = getFieldAddress().getText();
+        String phone = getFieldPhone().getText();
+        Person per = new Person(name, address, phone);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Warning");
+        if (!(person == null)) {
+            updatePerson(name, address, phone);
+        } else if (!name.equals("")) {
+            boolean found = false;
+            for (Person p : dbAddressBook.searchAll()) {
+                if ((p.getName().toLowerCase().equals(name.toLowerCase()) && p.getAddress().toLowerCase().equals(address.toLowerCase()) && phone.isEmpty()) ||
+                        (p.getName().toLowerCase().equals(name.toLowerCase()) && p.getPhone().toLowerCase().equals(phone.toLowerCase()) && address.isEmpty()) ||
+                        (p.getName().toLowerCase().equals(name.toLowerCase()) && phone.isEmpty() && address.isEmpty()) ||
+                        p.equals(per)){
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                //dbAddressBook.addNote(per);
+                saveClicked = true;
+                this.person = per;
+                closeWindow();
+            } else {
+                alert.setHeaderText("Such person '" + per.getName() + "' is already present in the address book");
+                alert.showAndWait();
+            }
+        } else if (name.equals("")){
+            alert.setHeaderText("Please type a name");
+            alert.showAndWait();
+        }
+    }
+    */
 }
